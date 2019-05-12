@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我的网站</title>
+<link rel="stylesheet" href="style/index.css" type="text/css">
+</head>
+	<body>
+	<div class="all">
+	<div class="nr">
+	<div class="nav">
+	<span class="s1">哆啦A梦</span>
+	<span class="s2">哆啦A梦</span>
+	</div>
+	<div class="body">
+		<div class="navleft">
+			<div class="tx">
+			<div class="txp">哆啦A梦</div>
+			</div>
+			<div class="dh"><a href="*">最新消息</a></div>
+			<div class="dh2"><a href="*">Flash动画</a></div>
+			<div class="dh3"><a href="*">短片欣赏</a></div>
+			<div class="dh4"><a href="*">留言板</a></div>
+		</div>
+		<div class="zxxx">最<br />新<br />消<br />息</div>
+		<div class="newxx">
+			<a>哆啦A梦将携手丽星邮轮开启和风假期！<br />丽星邮轮与哆啦A梦官方于6月1日在上海五角场合生汇举行新闻发布会，宣布正式启动合作。 <br />  今夏，丽星邮轮将在海上呈现承载着无数亚洲人童年回忆和梦想的哆啦A梦,为游客们献上更加特别的邮轮之旅。<br /> 丽星邮轮、哆啦A梦官方、日本国家旅游局上海办事处出席了发布会，丽星邮轮与哆啦A梦官方举行了隆重的签约仪式。现场气氛热烈，哆啦A梦和伙伴们的登场表演为发布会助兴，最后的互动环节以及抽奖活动更把仪式气氛推向了高潮。</a>
+			<div class="btm1" onClick="btm1ck()"><img src="images/201804251335156152.jpg" alt="btm1"></div>
+		    <div class="btm2" onClick="btm2ck()"><img src="images/201806011047033660.jpg" alt="btm2"></div>
+		    <div class="btm3" onClick="btm3ck()"><img src="images/201807311021162143.jpg" alt="btm3"></div>
+			<div class="btmck" id = "btmck"><div id="btmx" onclick="btmx()">x</div></div>
+		</div>
+	</div>
+</div>
+</div>
+<script>
+function btm1ck(){
+	var btm1ck = document.getElementById('btmck');
+	btm1ck.style.display="block";
+	btm1ck.style.backgroundImage="images/201804251335156152.jpg";
+}
+function btm2ck(){
+	var btm2ck = document.getElementById('btmck');
+	btm2ck.style.display="block";
+	btm2ck.style.backgroundImage=" url(../images/201806011047033660.jpg);"
+}
+function btm3ck(){
+	var btm1ck = document.getElementById('btmck');
+	btm1ck.style.display="block";
+	btm1ck.style.backgroundImage=" url(../images/201804251335156152.jpg);"
+}
+function btmx(){
+	var btmx = document.getElementById('btmck');
+	btmx.style.display="none";
+}
+</script>
+</body>
+</html>
