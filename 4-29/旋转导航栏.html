@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+</head>
+<body>
+	<style>
+body{
+	background-image: url(images/201807311021162143.jpg);
+}
+nav{
+	position: relative;
+	width: 1500px;
+	height: 100px;
+	text-align: center;
+	margin: 0 auto;
+		}
+nav a{
+	color: black;
+	font-size: 20px;
+    text-decoration: none; 
+} 
+nav a span{
+	position: relative;
+	width: 150px;
+	height: 50px;
+    line-height: 50px; 
+    background-color:rgba(0,160,234,1.00);
+    display: inline-block; 
+    transform-origin:top;
+	margin-top: 30px;
+	border-radius: 20px;
+    transition:all 0.5s steps(60);
+    transform-style:preserve-3d; 
+} 
+nav a span:after{ 
+	position: absolute;
+	width: 100%; 
+    height: 100%;
+	border-radius: 20px;
+    content: attr(data-hover); 
+    top: 100%; 
+    left: 0;
+    background-image:url(images/tx.PNG);
+	text-align: center;
+    transform:rotateX(-90deg); 
+    transform-origin:top;
+} 
+ 
+nav a:hover span{
+    transform:rotateX(90deg) translateY(-30px); 
+}
+.jintian,.nishuo,.tianqi,.zhenhao,.duima,.shide,.jintian2,.tianqi2,.zhenhao2{
+	position: absolute;
+	width: 150px;
+	height: 290px;
+	margin-left: 520.5px;
+	background-size: 0px;
+	margin-top: 5px;
+	border-radius: 20px;
+	transition:all 0.5s steps(60);
+	background-image: url(images/201601051746547347.jpg);
+}
+.jintian{
+	margin-left: 56.5px;
+}
+.tianqi{
+	margin-left: 210.5px;
+}
+.zhenhao{
+	margin-left: 365.5px;
+}
+.duima{
+	margin-left: 675px;
+}
+.shide{
+	margin-left: 830px;
+}
+.jintian2{
+	margin-left: 985px;
+}
+.tianqi2{
+	margin-left: 1140px;
+}
+.zhenhao2{
+	margin-left: 1295px;
+}
+		</style>
+<script>
+	function nishuo(){
+		var ns = document.getElementById("nishuo");
+		ns.style.backgroundSize = "150px";
+	}
+	function nishuoo(){
+		var ns = document.getElementById("nishuo");
+		ns.style.backgroundSize = "0px";
+	}
+	function tianqi(){
+		var ns = document.getElementById("tianqi");
+		ns.style.backgroundSize = "150px";
+	}
+	function tianqio(){
+		var ns = document.getElementById("tianqi");
+		ns.style.backgroundSize = "0px";
+	}
+	function jintian(){
+		var ns = document.getElementById("jintian");
+		ns.style.backgroundSize = "150px";
+	}
+	function jintiano(){
+		var ns = document.getElementById("jintian");
+		ns.style.backgroundSize = "0px";
+	}
+	function zhenhao(){
+		var ns = document.getElementById("zhenhao");
+		ns.style.backgroundSize = "150px";
+	}
+	function zhenhaoo(){
+		var ns = document.getElementById("zhenhao");
+		ns.style.backgroundSize = "0px";
+	}
+	function duima(){
+		var ns = document.getElementById("duima");
+		ns.style.backgroundSize = "150px";
+	}
+	function duimao(){
+		var ns = document.getElementById("duima");
+		ns.style.backgroundSize = "0px";
+	}
+	function shide(){
+		var ns = document.getElementById("shide");
+		ns.style.backgroundSize = "150px";
+	}
+	function shideo(){
+		var ns = document.getElementById("shide");
+		ns.style.backgroundSize = "0px";
+	}
+	function jintian2(){
+		var ns = document.getElementById("jintian2");
+		ns.style.backgroundSize = "150px";
+	}
+	function jintian2o(){
+		var ns = document.getElementById("jintian2");
+		ns.style.backgroundSize = "0px";
+	}
+	function tianqi2(){
+		var ns = document.getElementById("tianqi2");
+		ns.style.backgroundSize = "150px";
+	}
+	function tianqi2o(){
+		var ns = document.getElementById("tianqi2");
+		ns.style.backgroundSize = "0px";
+	}
+	function zhenhao2(){
+		var ns = document.getElementById("zhenhao2");
+		ns.style.backgroundSize = "150px";
+	}
+	function zhenhao2o(){
+		var ns = document.getElementById("zhenhao2");
+		ns.style.backgroundSize = "0px";
+	}
+	</script>
+<nav> 
+    <a href="" onMouseOver="jintian()" onMouseOut="jintiano()"> 
+        <span data-hover="今天">今天</span> 
+    </a> 
+    <a href="" onMouseOver="tianqi()" onMouseOut="tianqio()"> 
+        <span data-hover="天气">天气</span> 
+    </a>
+	<a href="" onMouseOver="zhenhao()" onMouseOut="zhenhaoo()"> 
+        <span data-hover="真好">真好</span> 
+    </a> 
+	<a href="" onMouseOver="nishuo()" onMouseOut="nishuoo()"> 
+        <span data-hover="你说">你说</span> 
+    </a> 
+	<a href="" onMouseOver="duima()" onMouseOut="duimao()"> 
+        <span data-hover="对吗">对吗</span> 
+    </a>
+	<a href="" onMouseOver="shide()" onMouseOut="shideo()"> 
+        <span data-hover="是的">是的</span> 
+    </a>
+	<a href="" onMouseOver="jintian2()" onMouseOut="jintian2o()"> 
+        <span data-hover="今天">今天</span> 
+    </a>
+	<a href="" onMouseOver="tianqi2()" onMouseOut="tianqi2o()"> 
+        <span data-hover="天气">天气</span> 
+    </a>
+	<a href="" onMouseOver="zhenhao2()" onMouseOut="zhenhao2o()"> 
+        <span data-hover="真好">真好</span> 
+    </a>
+<div class="nishuo" id = "nishuo"></div>
+<div class="tianqi" id = "tianqi"></div>
+<div class="jintian" id = "jintian"></div>
+<div class="zhenhao" id = "zhenhao"></div>
+<div class="duima" id = "duima"></div>
+<div class="shide" id = "shide"></div>
+<div class="jintian2" id = "jintian2"></div>
+<div class="tianqi2" id = "tianqi2"></div>
+<div class="zhenhao2" id = "zhenhao2"></div>
+</nav>
+</body>
+</html>
