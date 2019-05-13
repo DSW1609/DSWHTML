@@ -5,7 +5,7 @@
 <title>无标题文档</title>
 </head>
 <body>
-	<style>
+<style>
 body{
 	background-image: url(images/201807311021162143.jpg);
 }
@@ -25,31 +25,30 @@ nav a span{
 	position: relative;
 	width: 150px;
 	height: 50px;
-    line-height: 50px; 
-    background-color:rgba(0,160,234,1.00);
-    display: inline-block; 
-    transform-origin:top;
+	line-height: 50px;
+	background-color:rgba(0,160,234,1.00);
+	display: inline-block;
+	transform-origin:top;
 	margin-top: 30px;
 	border-radius: 20px;
-    transition:all 0.5s steps(60);
-    transform-style:preserve-3d; 
+	transition:all 0.5s steps(60);
+	transform-style:preserve-3d; 
 } 
 nav a span:after{
 	position: absolute;
 	width: 100%;
-    height: 100%;
+	height: 100%;
 	border-radius: 20px;
-    content: attr(data-hover);
-    top: 100%;
-    left: 0;
-    background-image:url(images/tx.PNG);
+	content: attr(data-hover);
+	top: 100%;
+	left: 0;
+	background-image:url(images/tx.PNG);
 	text-align: center;
-    transform:rotateX(-90deg); 
-    transform-origin:top;
+	transform:rotateX(-90deg);
+	transform-origin:top;
 } 
- 
 nav a:hover span{
-    transform:rotateX(90deg) translateY(-30px); 
+	transform:rotateX(90deg) translateY(-30px); 
 }
 .jintian,.nishuo,.tianqi,.zhenhao,.duima,.shide,.jintian2,.tianqi2,.zhenhao2{
 	position: absolute;
@@ -86,7 +85,7 @@ nav a:hover span{
 .zhenhao2{
 	margin-left: 1295px;
 }
-		</style>
+</style>
 <script>
 	function nishuo(){
 		var ns = document.getElementById("nishuo");
@@ -160,7 +159,7 @@ nav a:hover span{
 		var ns = document.getElementById("zhenhao2");
 		ns.style.backgroundSize = "0px";
 	}
-	</script>
+</script>
 <nav> 
     <a href="" onMouseOver="jintian()" onMouseOut="jintiano()"> 
         <span data-hover="今天">今天</span> 
