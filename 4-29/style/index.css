@@ -137,25 +137,28 @@ body{
 	box-shadow: 1px 1px 5px #000;
 }
 .btm1ck,.btm2ck,.btm3ck{
-	position:relative;
+	position:absolute;
 	width: 800px;
 	height: 500px;
-	margin: 0 auto;
+	top:-970px;
 	z-index: 999;
-	top:-1100px;
 	transition: all 1s steps(60);
 	background-size: 800px 500px;
 	box-shadow: 2px 2px 20px #000;
 	background-image:url(../images/201804251335156152.jpg);
 }
 .btm2ck{
+	top:-960px;
 	left: -250px;
+	z-index: 998;
 	background-image:url(../images/201806011047033660.jpg);
 }
 .btm3ck{
+	top:-950px;
 	left: -500px;
+	z-index: 997;
 	background-image:url(../images/201807311021162143.jpg);
 }
 .btm1:hover .btm1ck,.btm2:hover .btm2ck,.btm3:hover .btm3ck{
-	top: -480px;
+	top: -350px;
 }
