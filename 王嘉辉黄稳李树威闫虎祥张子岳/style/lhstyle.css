@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+.all{
+	position: relative;
+	width: 100%;
+	height: 1500px;
+	background-image: url(../images/bj.jpg);
+}
+.nr{
+	width: 1100px;
+	height: 1500px;
+	margin: 0 auto;
+	background-image: url(../images/bj2.jpg);
+}
+.headtop{
+	width: 1100px;
+	height: 200px;
+	margin: 0 auto;
+	background-image: url(../images/index.jpg);
+}
+.head{
+	width: 1000px;
+	height: 50px;
+	margin-top: -20px;
+	margin-left: auto;
+	margin-right: auto;
+	line-height:15px;
+	word-spacing: 2em;
+	text-align: center;
+	border: 2px solid rgba(153,153,153,1.00);
+	background-image: url(../images/head.jpg);
+}
+.head li{
+	display: inline-block;
+	font-size: 30px;
+}
+.head a:link ,a:visited{
+	color: #000;
+}
+.head a:hover {
+color: #FFFFFF;
+background: #000;
+padding-top: 20px;
+padding-bottom: 12px;
+text-decoration: none;
+}
+.a{
+	position:absolute;
+	margin-left:150px;
+	margin-top:20px;
+}
+.a a{
+	color:#666;
+	text-decoration:none;
+}
+.b{
+	position:absolute;
+	width:750px;
+	height:35px;
+	font-size:30px;
+	background:#C30;
+	margin-left:50px;
+	margin:10 auto;
+	margin-top:60px;
+}
+.c{
+	position:absolute;
+	margin-left:350px;
+	margin-top:105px;
+	color:#F30;
+	font-size:27px;
+}
+.d{
+	position:absolute;
+	margin-left:300px;
+	margin-top:150px;
+	color:#F30;
+	font-size:15px;
+}
+.e{
+	position:absolute;
+	margin-left:50px;
+	margin-top:170px;
+	font-size:10px;
+}
+.f{
+	position:absolute;
+	width:750px;
+	height:800px;
+	font-size:10px;
+	letter-spacing: 0.3em;
+	line-height: 22px;
+	color:#1E1E1E
+}
+.b2{	
+    float: right;
+	width: 250px;
+	height: 40px;
+	background: #5E3435;
+	margin-top:60px;
+	line-height: 40px;
+	
+}
+.b3{
+	float: right;
+	width: 250px;
+	height: 40px;
+	background: #5E3435;
+	margin-top: 10px;
+	
+}
+.bt2{
+	font-size: 30px;
+	 margin-left: 20px;
+}
+.kuang{
+      float: right;
+      background:#987F80;
+      width: 250px;
+      height: 30px;
+      margin-left: 850px;
+      margin-top: 10px;
+      line-height: 30px;
+      color: #740707;
+}
+.ming{
+	position: absolute;
+	margin: 20px;
+	margin-top:1230px;
+	color: #740707;
+}
+.xian{
+	position:absolute;
+	width: 1100px;
+	height: 10px;
+	margin-top:1200px;
+	background: #8B6B6B;
+}

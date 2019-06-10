@@ -1,0 +1,213 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link href="style/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" language="javascript" charset="UTF-8" src="js/wbjs.js"></script>
+</head>
+<body onDblclick="dclick()">
+	<div class="all">
+		<div class="body">
+			<div class="header">
+				<p>WELCOME TO MY WEBSITE</p>
+			</div>
+			<div class="nav">
+			<div class="dh">
+		<a href="index.html" class="menuLink">首页</a>
+		<ul class="menu" id="menu1">
+			<li><a href="">测试1</a></li>
+			<li><a href="">测试1</a></li>
+		</ul>
+	</div>
+	<div  class="dh">
+		<a href="menu2.html" class="menuLink">热门</a>
+		<ul class="menu" id="menu2">
+			<li><a href="">测试2</a></li>
+			<li><a href="">测试2</a></li>
+		</ul>
+	</div>
+				<div  class="dh">
+		<a href="menu3.html" class="menuLink">历史</a>
+		<ul class="menu" id="menu3">
+			<li><a href="">测试3</a></li>
+			<li><a href="">测试3</a></li>
+		</ul>
+	</div>
+				<div  class="dh">
+		<a href="menu3.html" class="menuLink">活动</a>
+		<ul class="menu" id="menu4">
+			<li><a href="">测试4</a></li>
+			<li><a href="">测试4</a></li>
+		</ul>
+	</div>
+</div>
+<script type="text/javascript">
+	function check(){
+		if(form1.zh.value==""||form1.mm.value==""){
+			alert("账号或密码不能为空！");
+		}
+		else{
+			window.document.cookie=zh+"="+escape(mm)+";";
+			alert("登录成功！")
+		}
+	}
+
+
+				window.addEventListener("load",initAll,false);
+function initAll() {
+	var allLinks = document.getElementsByTagName("a");
+	for (var i=0; i<allLinks.length; i++) {
+		if (allLinks[i].className.indexOf("menuLink") > -1) {
+			allLinks[i].addEventListener("mouseover",toggleMenu,false);
+			allLinks[i].addEventListener("click",clickHandler,false);
+		}
+	}
+}
+function clickHandler(evt) {
+	if (evt) {
+		evt.preventDefault();
+		if (typeof evt.target == "string") {
+			toggleMenu(evt,evt.target);
+		}
+		else {
+			toggleMenu(evt,evt.target.toString());
+		}
+	}
+	else {
+		toggleMenu(evt,window.event.srcElement.href);
+	}
+}
+function toggleMenu(evt,currMenu) {
+	if (toggleMenu.arguments.length < 2) {
+		var currMenu = this.href;
+	}
+	var startMenu = currMenu.lastIndexOf("/")+1;
+	var stopMenu = currMenu.lastIndexOf(".");
+	var thisMenuName = currMenu.substring(startMenu,stopMenu);
+	var menuParent = document.getElementById(thisMenuName).parentNode;
+	var thisMenuStyle = document.getElementById(thisMenuName).style;
+	thisMenuStyle.display = "block";
+	menuParent.addEventListener("mouseout",function() {thisMenuStyle.display = "none";},false);
+	menuParent.addEventListener("mouseover",function() {thisMenuStyle.display = "block";},false);
+}
+
+		function dclick(){
+	alert("您双击了鼠标！");
+}
+onkeydown = function(event){
+if(event.keyCode == 13)
+{
+alert('你按了回车键');
+}
+}
+</script>
+			<div class="login">
+				<form method="post" id="form1" name="form1" action="" style="position: absolute;ma margin-top:20px;margin-left: 20px;line-height: 38px;">
+			            <table width="95%">
+						<tr>账号:<input style="width: 200px;height: 22px;margin-left: 10px;" type="text" name="zh"/>
+						</tr><br>
+						<tr>密码:<input style="width: 200px;height: 22px;margin-left: 10px;" type="text" name="mm"/>
+					    </tr><br>
+						<tr><td align="center"><input type="submit" name="dl" onclick="check()" value="登录"></td>
+							<td align="center"><a href="zhuce.html"><input type="button" name="zc" value="注册"></a></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+			<div class="new">
+				<h1 style="text-align: center;">广告</h1>
+				<div class="hx3"></div>
+				<div>
+
+					<a href="" onmouseover="document.images['arrow'].src='image/5.5.png'" onMouseOut="document.images['arrow'].src='image/DSW.png'">
+                    <img src="image/DSW.png" id="arrow" alt="arrow">
+                    </a>
+				</div>
+			</div>
+				<div class="bottom">
+				<h1>版权所有©济南职业学院王嘉辉</h1>
+			</div>
+				<div class="newrizhi">
+				<div id="ddate"></div>
+                <div id="ddate2"></div>
+<script language="javascript">
+var ddate=document.getElementById("ddate");
+var ddate2=document.getElementById("ddate2");
+function updatedate(){
+var dd1=new Date();
+dd1.setMinutes(dd1.getMinutes()+dd1.getTimezoneOffset()-300);
+var tmin=dd1.getHours();
+ddate.innerHTML='美国时间:'+dd1.getFullYear()+"年"+(dd1.getMonth()+1)+"月"+dd1.getDate()+"日"+tmin+"点"+dd1.getMinutes()+"分"+dd1.getSeconds()+"秒";
+var dd2=new Date();
+    dd2.setMinutes(dd2.getMinutes()+dd2.getTimezoneOffset()+13*60-300);
+ddate2.innerHTML='北京时间'+ dd2.getFullYear()+"年"+(dd2.getMonth()+1)+"月"+dd2.getDate()+"日"+dd2.getHours()+"点"+dd2.getMinutes()+"分"+dd2.getSeconds()+"秒";
+ var t=setTimeout("updatedate()",1000);
+}
+updatedate();
+</script>
+
+<div class="cs">
+<script language="JavaScript">
+function getCookieVal(offset)
+{var endstr=document.cookie.indexOf(";",offset);
+ if(endstr==-1)
+endstr=document.cookie.length;
+ return unescape(document.cookie.substring(offset,endstr));
+}function GetCookie(name)
+{var arg=name+"=";var alen=arg.length;
+ var clen=document.cookie.length;
+ var i=0;
+ while(i<clen)
+{var j=i+alen;
+ if(document.cookie.substring(i,j)==arg)
+return getCookieVal(j);i=document.cookie.indexOf(" ",i)+1;
+ if(i==0)
+break;
+}return null;
+}function SetCookie(name,value)
+{var argv=SetCookie.arguments;
+ var argc=SetCookie.arguments.length;
+ var expires=(2<argc)?argv[2]:null;
+ var path=(3<argc)?argv[3]:null;
+ var domain=(4<argc)?argv[4]:null;
+ var secure=(5<argc)?argv[5]:false;
+ document.cookie=name+"="+escape(value)+((expires==null)?"":("; expires="+expires.toGMTString()))+((path==null)?"":("; path="+path))+((domain==null)?"":("; domain="+domain))+((secure==true)?"; secure":"");
+}function ResetCounts(name)
+{visits=0;SetCookie("visits",visits,expdate,"/",null,false);
+ location.reload();}
+var expdate=new Date();
+var visits;
+expdate.setTime(expdate.getTime()+(24*60*60*1000*365));
+if(!(visits=GetCookie("visits")))
+visits=0;visits++;SetCookie("visits",visits,expdate,"/",null,false);
+document.write("浏览次数："+"<FONT COLOR=red>"+visits+"</FONT>");
+</script>
+	</div>
+				<div class="xhx"></div>
+<script type="text/javascript">
+lastScrollY = 0;
+function heartBeat(){
+var diffY;
+if (document.documentElement && document.documentElement.scrollTop)
+diffY = document.documentElement.scrollTop;
+else if (document.body)
+diffY = document.body.scrollTop
+percent=.1*(diffY-lastScrollY);
+if(percent>0)percent=Math.ceil(percent);
+else percent=Math.floor(percent);
+document.getElementById("leftDiv").style.top = parseInt(document.getElementById("leftDiv").style.top)+percent+"px";
+document.getElementById("rightDiv").style.top = parseInt(document.getElementById("leftDiv").style.top)+percent+"px";
+lastScrollY=lastScrollY+percent;
+}
+window.setInterval("heartBeat()",1);
+</script>
+<div id="leftDiv" style="top:40px;left:2px;background-image: url(image/PC_wallpaper_201705.png)">广告</div>
+<div id="rightDiv" style="top:40px;right:2px;background-image: url(image/PC_wallpaper_201708.png)">广告</div>
+<div id="mm">
+</div>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
