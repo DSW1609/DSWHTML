@@ -1,0 +1,96 @@
+@charset "utf-8";
+a{
+	font-family: "Microsoft Yahei";
+}
+body{
+	margin: 0;
+}
+.body{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.head{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #ee6e61;
+	text-align: center;
+	letter-spacing: 20px;
+	
+}
+.head a{
+	font-size: 33px;
+	text-decoration: none;
+	color: rgba(235,154,156,1.00);
+	
+}
+.head li{
+	list-style-type: none;
+	display: inline;
+	
+}
+.head a:hover{
+	color: rgba(114,133,243,1.00);
+}
+.nr{
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+.WindMill{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto;
+}
+.WindMill img{
+	width: 300px;
+	height: 300px;
+	cursor: pointer;
+	transition: all 1s steps(60);
+	animation: xuanzhuan 2s infinite linear;/*一直匀速*/
+}
+@keyframes xuanzhuan{
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes xuanzhuan{ /* Safari 和 Chrome */
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+.WindMill img:hover{
+	animation-play-state:paused;
+	-webkit-animation-play-state:paused;
+}
+.AnimalLeft{
+	position: relative;
+	float: left;
+	width: 200px;
+	height: 300px;
+	left: 200px;
+	top:-300px;
+}
+.AnimalRight{
+	position: relative;
+	float: right;
+	width: 200px;
+	height: 300px;
+	right: 200px;
+	top:-300px;
+}
+.AnimalLeft img,.AnimalRight img{
+	width: 200px;
+	transition: all 0.5s steps(60);
+}
+.AnimalLeft img:hover,.AnimalRight img:hover{
+	transform:scale(1.5,1.5);
+}
