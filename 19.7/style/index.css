@@ -89,8 +89,10 @@ body{
 }
 .AnimalLeft img,.AnimalRight img{
 	width: 200px;
+	opacity: 0.5;
 	transition: all 0.5s steps(60);
 }
 .AnimalLeft img:hover,.AnimalRight img:hover{
-	transform:scale(1.5,1.5);
+/*	transform:scale(1.5,1.5);*/
+	opacity: 1.5;
 }
