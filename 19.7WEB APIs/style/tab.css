@@ -1,0 +1,46 @@
+.tab{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  border: 1px solid #f66f61;
+}
+.tabtop{
+  position: relative;
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0;
+  text-align: center;
+}
+.xxk{
+  background: #f66f61;
+  color: white;
+}
+ul,li,a{
+  margin: 0;
+  padding: 0;
+}
+li{
+  position: relative;
+  float: left;
+  list-style: none;
+  width: 100px;
+}
+a{
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+.tabbody{
+  position: relative;
+  width: 500px;
+  height: 450px;
+  background: #f66f61;
+}
+.tabitem{
+  display: none;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+}
