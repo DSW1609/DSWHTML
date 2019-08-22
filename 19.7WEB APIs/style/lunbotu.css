@@ -7,7 +7,7 @@ body{
   width: 500px;
   height: 320px;
   margin: 0 auto;
-  top:100px;
+  top:50px;
   overflow: hidden;
 }
 .leftjt{
@@ -38,19 +38,19 @@ ul,li{
   margin: 0;
   padding: 0;
 }
+.peacediv ul li{
+  float: left;
+  list-style-type: none;
+}
 a{
   text-decoration: none;
 }
-ul{
+.peacediv ul{
   position: absolute;
   width: 2200px;
   height: 320px;
   left: 0px;
   top:0;
-}
-ul li{
-  float: left;
-  list-style-type: none;
 }
 .bg1{
   width: 500px;
@@ -73,4 +73,37 @@ ol li{
 }
 .dian{
   list-style-type: disc;
+}
+.nav{
+  position: relative;
+  width: 500px;
+  height: 30px;
+  background: linear-gradient(to right,#667db6, #0082c8,#0082c8,#667db6);
+  margin: 0 auto;
+  text-align: center;
+  line-height: 28px;
+}
+.nav ul{
+  position: absolute;
+  width: 500px;
+  height: 30px;
+  z-index: 999;
+}
+.nav ul li{
+  display: inline-block;
+  margin: 0 10px;
+  list-style-type: none;
+}
+.nav a{
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+}
+.small{
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  background: #fdd63d;
+  left: 11px;
+  top:0;
 }

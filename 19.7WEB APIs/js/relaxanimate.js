@@ -16,9 +16,11 @@ function relax(obj, target, callback){
       clearInterval(obj.timer);
       // 回调函数写到定时器结束里面
       // 如果有callback参数传进来就调用
-      if (callback) {
-        callback();
-      }
+      // if (callback) {
+      //   callback();
+      // }
+      // 高级写法
+      callback && callback();
     }
     obj.style.left = obj.offsetLeft + step + 'px';
   },15);
