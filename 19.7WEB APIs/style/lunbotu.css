@@ -1,0 +1,76 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+.peacediv{
+  position: relative;
+  width: 500px;
+  height: 320px;
+  margin: 0 auto;
+  top:100px;
+  overflow: hidden;
+}
+.leftjt{
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 50px;
+  top:125px;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+}
+.rightjt{
+  position: relative;
+  float: right;
+  width: 50px;
+  height: 50px;
+  top:125px;
+  z-index: 999;
+  display: none;
+  cursor: pointer;
+}
+.leftjt img,
+.rightjt img{
+  width: 50px;
+}
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  position: absolute;
+  width: 2200px;
+  height: 320px;
+  left: 0px;
+  top:0;
+}
+ul li{
+  float: left;
+  list-style-type: none;
+}
+.bg1{
+  width: 500px;
+}
+ol{
+  position: absolute;
+  width: 400px;
+  height: 10px;
+  z-index: 999;
+  top:266px;
+  left: 40%;
+}
+ol li{
+  float: left;
+  width: 30px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  list-style-type: circle;
+}
+.dian{
+  list-style-type: disc;
+}

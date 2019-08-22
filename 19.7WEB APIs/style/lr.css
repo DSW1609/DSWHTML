@@ -1,0 +1,36 @@
+img{
+  position: absolute;
+  width: 300px;
+  transition: all 0.5s steps(60);
+  opacity: 0;
+}
+.bg0{
+  float: left;
+  left: 50px;
+  top:150px;
+}
+.bg1{
+  float: right;
+  right: 50px;
+  top:150px;
+}
+.bg2{
+  float: left;
+  left: 50px;
+  top:650px;
+}
+.bg3{
+  float: right;
+  right: 50px;
+  top:650px;
+}
+.bg4{
+  float: left;
+  left: 50px;
+  top:1150px;
+}
+.bg5{
+  float: right;
+  right: 50px;
+  top:1150px;
+}

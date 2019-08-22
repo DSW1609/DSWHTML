@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>轮播图效果实现</title>
+  <link rel="stylesheet" href="style/lunbotu.css">
+</head>
+<body>
+  <!-- 添加一个和平的大盒子 -->
+<div class="peacediv">
+  <!-- 写左右两侧垂直居中的指示箭头 -->
+  <div class="leftjt">
+    <img src="images/leftjt.png" alt="">
+  </div>
+  <div class="rightjt">
+    <img src="images/rightjt.png" alt="">
+  </div>
+  <!-- 两侧指示箭头结束 -->
+  <!-- 写横向滚动图片行 -->
+  <ul>
+    <li>
+      <a href="javascript:;"><img src="images/bg1.jpg" class="bg1" alt=""></a>
+    </li>
+    <li>
+      <a href="javascript:;"><img src="images/bg2.jpg" class="bg1" alt=""></a>
+    </li>
+    <li>
+      <a href="javascript:;"><img src="images/bg3.jpg" class="bg1" alt=""></a>
+    </li>
+  </ul>
+  <!-- 横向滚动图片结束 -->
+  <!-- 底部圆点指示器开始 -->
+  <ol>
+    <li class="dian" data-index = '0'></li>
+    <li data-index = '1'></li>
+    <li data-index = '2'></li>
+  </ol>
+</div>
+<!-- 引入外部js文件 -->
+<script src="js/relaxanimate.js">
+</script>
+<script src="js/lunbotu.js">
+</script>
+</body>
+</html>

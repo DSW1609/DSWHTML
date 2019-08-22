@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>relax缓动动画函数测试</title>
+  <link rel="stylesheet" href="style/relaxtest.css">
+</head>
+<body>
+<button class="btn300">开始-300</button>
+<button class="btn500">开始-500</button>
+<div>
+  <img src="images/bg.jpg" alt="">
+</div>
+<script src="js/relaxanimate.js"></script>
+<script type="text/javascript">
+  var btn300 = document.querySelector('.btn300');
+  var btn500 = document.querySelector('.btn500');
+  var div = document.querySelector('div');
+  btn300.addEventListener('click',function() {
+    relax(div,300);
+  });
+  btn500.addEventListener('click',function() {
+    relax(div,500);
+  })
+</script>
+</body>
+</html>
